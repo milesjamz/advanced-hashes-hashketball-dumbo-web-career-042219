@@ -1,5 +1,3 @@
-require "pry"
-
 def game_hash 
   {
   :home => {
@@ -119,7 +117,6 @@ end
 
 def num_points_scored(player)
 game_hash.each do |a, b|
-binding pry
 b[:players].each do |player_name, data|
   if player_name == player
     return data[:points]
